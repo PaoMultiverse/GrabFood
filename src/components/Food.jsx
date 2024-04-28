@@ -1,4 +1,5 @@
 import PromoFoodAll from './PromoFoodAll';
+import { Link } from 'react-router-dom';
 
 function Food(){
     
@@ -142,8 +143,13 @@ function Food(){
 
     return(
         <>
-        <div className='container flex flex-wrap mt-20'>
-            {foodpromo}</div>
+        <div className='container mt-20'>
+          <h5><Link to="/GrabFake" style={{textDecoration : "none"}}>Trang chủ</Link> &gt; <Link to="/Restaurant" style={{textDecoration : "none"}}>Nhà hàng</Link>&gt;</h5>
+          <div className='flex flex-wrap '>
+                      {foodpromo}
+            </div>
+        </div>
+        
         </>
     )
 }
