@@ -8,7 +8,9 @@ function Home(){
     return(
         <>
             <div>
+            <div className="hidden sm:block"> {/* Thẻ div này sẽ bị ẩn khi màn hình nhỏ hơn hoặc bằng sm */}
                 <BackgroundHeader/>
+            </div>
                 <PromoInWhere/>
                 <CarourelPromo/>
                 <Category/>

@@ -15,21 +15,21 @@ function Footer() {
                 alt="grab-logo"
                 />
               <div class="border-bottom h-0 ml-4 w-full"></div>
-              <div className="flex ml-9">
-                <div className="w-72 h-20">
+              <div className="flex flex-wrap ml-9">
+                <div className="w-72 sm:h-20 ">
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Về GrabFood</li>
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Về Grab</li>
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Blog</li>
                 </div>
-                <div className="w-72 h-20">
+                <div className="w-72 sm:h-20">
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Mở quán trên GrabFood</li>
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Trở thành tài xế Grab</li>
                 </div>
-                <div className="w-72 h-20">
+                <div className="w-72 sm:h-20">
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Trung tâm hỗ trợ</li>
                   <li className="list-none text-white my-8 font-semibold cursor-pointer text-lg">Câu hỏi thường gặp</li>
                 </div>
-                <div className="mt-8 flex">
+                <div className="mt-8 md:flex">
                   <span className="cursor-pointer m-3">
                     <img src={IconFB}></img>
                   </span>
@@ -47,14 +47,14 @@ function Footer() {
               ></div>
               <div className="grid-cols-1 ">
             <div class="grid xl:grid-cols-4 gap-4  lg:grid-cols-6">
-              <div class="col-span-2 flex items-center ml-8 py-2">
+              <div class="col-span-2 inline md:flex items-center ml-8 py-2">
                 <img
                   className="mr-4"
                   src="https://food.grab.com/static/images/logo-appstore.svg"
                 />
                 <img src="https://food.grab.com/static/images/logo-playstore.svg" />
               </div>
-              <div class="col-span-2 py-4 text-xs xl:text-right  lg:text-left mr-8 lg:ml-8 text-white">
+              <div class="col-span-2 py-4 text-xs md:text-right  text-left mr-8 ml-8 text-white">
                 <span class="mr-4">© 2024 Grab</span>
                 <span class="mr-4">Terms of Service</span>
                 <span>• Privacy Policy</span>

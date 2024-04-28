@@ -18,7 +18,7 @@ function AddressBox({ setAddressValue }) {
         <>
             <div className="container">
                 <div className="col-md-1">
-                    <div className="p-3 mb-5 rounded absolute top-16p w-350 h-96 bg-white shadow-xl">
+                    <div className=" sm:p-3 sm:mb-5 sm:rounded sm:absolute sm:top-16p sm:w-350  sm:h-96  sm:shadow-xl bg-white">
                         <div className="wrap-input pt-6 pl-4">
                             <h5 id="af" className="font-bold">Good Afternoon</h5>
                             <h1 id="where" className="font-bold mb-4">Where should we deliver your food today?</h1>
@@ -36,7 +36,7 @@ function AddressBox({ setAddressValue }) {
                                 onChange={handleInputChange}
                                 ></input>
                                 <img
-                                className="absolute right-0 mr-4"
+                                className="absolute ml-64 sm:right-0  sm:mr-6"
                                 src={icGeoBtn}
                                 alt="Geo Button"
                                 ></img>

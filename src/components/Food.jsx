@@ -1,31 +1,8 @@
-import { Link } from 'react-router-dom';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import "./StyleSheet.css"
-import PromoFood from './PromoFood';
+import PromoFoodAll from './PromoFoodAll';
 
-function CarourelPromo(){
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 1024 },
-          items: 4
-        },
-        desktop: {
-          breakpoint: { max: 1024, min: 800 },
-          items: 4
-        },
-        tablet: {
-          breakpoint: { max: 800, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
-
-      const foodData =[
+function Food(){
+    
+    const foodData =[
         {
           id:1,
           name: "Cơm thập cẩm",
@@ -149,11 +126,9 @@ function CarourelPromo(){
           km: "5.0 km"
         },
       ]
-      const randomIndexes = Array.from({ length: 7 }, () => Math.floor(Math.random() * foodData.length));
-      const foodpromo = randomIndexes.map((index) => {
-        const item = foodData[index];
+    const foodpromo = foodData.map((item) => {
         return (
-          <PromoFood 
+          <PromoFoodAll 
             key={item.id} 
             name={item.name} 
             type={item.type} 
@@ -164,23 +139,12 @@ function CarourelPromo(){
           />
         );
       });
-      return (
-        <>
-          <div className='container'>
-            <div className='mt-4 overflow-hidden'>
-              <div className='my-1'>
-                <Carousel responsive={responsive} className='overflow-visible'>
-                {foodpromo}
-                </Carousel>
-              </div>
-            </div>
-            <div className='btn-see-more-question'>
-              <Link id='a' to='/Restaurant'><strong id>See all promotions</strong></Link>
-            </div>
-          </div>
-        </>
-      )
-      
-}
 
-export default CarourelPromo;
+    return(
+        <>
+        <div className='container flex flex-wrap mt-20'>
+            {foodpromo}</div>
+        </>
+    )
+}
+export default Food;
