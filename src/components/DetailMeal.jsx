@@ -99,6 +99,11 @@ const DetailMeal = () => {
         closable={false}
         onClose={closeDrawer}
       >
+        <div>
+          <button onClick={() => closeDrawer()  }>
+          Tắt
+          </button>
+        </div>
         {selectedMeal && (
           <div className="card" style={{ width: "100%" }}>
             <div className="row g-0">
